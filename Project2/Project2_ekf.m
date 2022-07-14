@@ -12,37 +12,7 @@
 %
 % -------------------------------------------------------------------------
 %
-% Inputs:
-% f = f_k
-% Q = Q_k+1
-% h = h_k
-% y = y_k
-% R = R_k
-% del_f = gradient of f_k
-% del_h = gradient of h_k
-% x_hat = current state prediction
-% P_hat = current error covariance (predicted)
 %
-% -------------------------------------------------------------------------
-%
-% Outputs:
-% x_next = next state prediction
-% P_next = next error covariance (predicted)
-% x_dgr = current state estimate
-% P_dgr = current estimated error covariance
-%
-% -------------------------------------------------------------------------
-%
-%%      Theory
-%   px` = px + vx * dt
-%   py` = py + vy * dt
-%   vx` = vx 
-%   vy` = vy 
-%   |px`|     | 1  0 dt  0 |   | px |
-%   |py`|  =  | 0  1  0 dt | * | py |
-%   |vx`|     | 0  0  1  0 |   | vx |
-%   |vy`|     | 0  0  0  1 |   | yz |
-%    x` = F * x
 %%
 
 
